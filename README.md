@@ -23,3 +23,10 @@
 8. **Copy the *OAuth Access Token* and the *Bot User OAuth Access Token***.
 ![Step 7](/images/step7.png)
 9. **Send the OAuth Tokens to Three Good (via email or phone)*
+
+
+## Set up environment and run code 
+requires python and conda
+1. create anaconda environment
+`conda create --name threegoodbot --file conda_env.txt -c conda-forge`
+2. 

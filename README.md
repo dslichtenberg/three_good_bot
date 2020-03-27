@@ -36,3 +36,4 @@ then
 4. after this is complete (takes a few minutes) set up is done. 
 5. to create and send new messages, open the `slackbot_config.xlsx` spreadsheet to enter new messages.  you can use a slack username to direct a message to one user or leave it blank to send to all slack users. save the file when you're ready to send the messages.
 6. to run the application, which will send all unsent messages, double-click "send_slack_messages.sh"
+(if this doesn't work, in the terminal type `~/three_good_bot/send_slack_message.sh`)

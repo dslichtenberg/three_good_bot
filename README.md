@@ -28,10 +28,11 @@
 ## Set up environment and run code 
 
 1. install docker on your computer: [instructions](https://docs.docker.com/install/)
-2. download this repository and unzip it. move the resulting folder to your personal folder : (e.g. `/home/dan/three_good_bot`)
-3. build the docker container: on a mac, run the terminal application. type
+2. download this repository and unzip it. move/rename the resulting folder to your personal folder : (e.g. `/Users/dan/three_good_bot`)
+3. build the docker container: on a mac, first launch the docker application (Applications > Docker). You don't need to log in. then launch the terminal application. type
 `cd three_good_bot/docker`
 then
 `docker build -t three_good_bot .`
-4. open the `slackbot_config.xlsx` spreadsheet to enter new messages.  you can use a slack username to direct a message to one user or leave it blank to send to all slack users. save the file when you're ready to send the messages.
-5. to run the application, which will send all unsent messages, double-click "send_slack_messages.sh"
+4. after this is complete (takes a few minutes) set up is done. 
+5. to create and send new messages, open the `slackbot_config.xlsx` spreadsheet to enter new messages.  you can use a slack username to direct a message to one user or leave it blank to send to all slack users. save the file when you're ready to send the messages.
+6. to run the application, which will send all unsent messages, double-click "send_slack_messages.sh"

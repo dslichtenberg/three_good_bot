@@ -2,7 +2,7 @@ import time, sys, re
 import slack
 import math
 import config_file as cfg
-
+import numpy as np
 from absl import flags
 
 
@@ -45,10 +45,11 @@ FLAGS(sys.argv)
 
 def main():
   customer_codes ,msg_queue = cfg.read_config()
+  msg_queue = msg_queue.replace(np.nan, '', regex=True)
 
   for i in range(msg_queue.message.count()):
     if(msg_queue.sent[i] != True): 
-      if(math.isnan(msg_queue.user[i])):
+      if(msg_queue.user[i] == ''):
         print(sendDMtoAllUsers(customer_codes, msg_queue.client_to[i].strip(), msg_queue.message[i].strip()))
       else:
         print(sendDMtoUser(customer_codes,msg_queue.user[i].strip(), msg_queue.client_to[i].strip(), msg_queue.message[i].strip()))

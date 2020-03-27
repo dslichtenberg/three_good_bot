@@ -26,7 +26,12 @@
 
 
 ## Set up environment and run code 
-requires python and conda
-1. create anaconda environment
-`conda create --name threegoodbot --file conda_env.txt -c conda-forge`
-2. 
+
+1. install docker on your computer: [instructions](https://docs.docker.com/install/)
+2. download this repository and unzip it. move the resulting folder to your personal folder : (e.g. `/home/dan/three_good_bot`)
+3. build the docker container: on a mac, run the terminal application. type
+`cd three_good_bot/docker`
+then
+`docker build -t three_good_bot .`
+4. open the `slackbot_config.xlsx` spreadsheet to enter new messages.  you can use a slack username to direct a message to one user or leave it blank to send to all slack users. save the file when you're ready to send the messages.
+5. to run the application, which will send all unsent messages, double-click "send_slack_messages.sh"

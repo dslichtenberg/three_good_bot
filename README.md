@@ -6,11 +6,12 @@
 ![Step 1](/images/step1.png)
 3. Create the Slack App: 
     * Fill in App Name: **Three Good for Slack** 
-    * Under Development Slack Workspace, choose your company slakc workspace (you may have to log in)
+    * Under Development Slack Workspace, choose your company slack workspace (you may have to log in)
     * Click **Create App**
 ![Step 2](/images/step2.png)
-4. **On the next screen click Bot Users on the left hand menu.**
-![Step 3](/images/step3.png)
+4. **On the next screen click OAuth & Permissions on the left hand menu.**
+    * Set up the permissions to mirror the below images
+![Step 3](/images/scopes.png)
 5. **Create the Bot User:**
    * Display name = three_good_bot
    * default username = three_good_bot

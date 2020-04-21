@@ -12,18 +12,11 @@
 4. **On the next screen click OAuth & Permissions on the left hand menu.**
     * Set up the permissions to mirror the below images
 ![Step 3](/images/scopes.png)
-5. **Create the Bot User:**
-   * Display name = three_good_bot
-   * default username = three_good_bot
-   * Click **Add Bot User**
-![Step 4](/images/step4.png)
-6. **Click *Install App to Your Team***
+5. **Click *Install App to Workspace***
 ![Step 5](/images/step5.png)
-7. **Review the permissions of the Three Good Slack App and click *Allow* when you are ready.**
-![Step 6](/images/step6.png)
-8. **Copy the *OAuth Access Token* and the *Bot User OAuth Access Token***.
+7. **Note the *OAuth Access Token* and the *Bot User OAuth Access Token***. 
 ![Step 7](/images/step7.png)
-9. **Send the OAuth Tokens to Three Good (via email or phone)*
+
 
 
 ## Set up environment and run code 
